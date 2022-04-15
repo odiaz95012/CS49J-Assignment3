@@ -21,7 +21,7 @@ public class Main {
         LocalDate testDate2 = LocalDate.parse("2022-03-18");
         LocalDate testDate3 = LocalDate.parse("2022-05-27");
 
-        Appointment appointment = new OneTimeAppointment("Class starts", startDate);
+        Appointment appointment = new OnetimeAppointment("Class starts", startDate);
         System.out.println(appointment.occursOn(testDate1));
         System.out.println(appointment.occursOn(testDate2));
         System.out.println(appointment.occursOn(testDate3));
@@ -42,7 +42,7 @@ public class Main {
         LocalDate startDate2 = LocalDate.parse("2022-02-16");
         LocalDate endDate2 = LocalDate.parse("2022-05-16");
 
-        Appointment a1 = new OneTimeAppointment("Class Starts", startDate);
+        Appointment a1 = new OnetimeAppointment("Class Starts", startDate);
         Appointment a2 = new DailyAppointment("Class", startDate,endDate);
         Appointment a3 = new DailyAppointment("Assignments", startDate2,endDate2);
         Appointment a4 = new MonthlyAppointment("A meeting", startDate, endDate);
@@ -51,7 +51,7 @@ public class Main {
         Appointment[] listAppointments = {a1,a2,a3,a4,a5};
         Arrays.sort(listAppointments);
         System.out.println("Sort by Dates First: "+ Arrays.toString(listAppointments));
-        Arrays.sort(listAppointments, new DescComparator());
+        Arrays.sort(listAppointments, new DesComparator());
         System.out.println("Sort by Description First: " + Arrays.toString(listAppointments));
 
 

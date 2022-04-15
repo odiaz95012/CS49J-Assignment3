@@ -5,7 +5,7 @@ import java.util.Comparator;
 /**
  * This is a class to compare Appointment objects by the Appointment's description first, then start date, and finally the end date.
  */
-public class DescComparator implements Comparator<Appointment> {
+public class DesComparator implements Comparator<Appointment> {
     /**
      * @param o1 The first Appointment being compared.
      * @param o2 The second Appointment being compared.

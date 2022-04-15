@@ -5,12 +5,12 @@ import java.time.LocalDate;
 /**
  * This is a subclass of the Appointment class. It creates a One Time Appointment.
  */
-public class OneTimeAppointment extends Appointment{
+public class OnetimeAppointment extends Appointment{
     /**
      * @param description This is the description of the Appointment.
      * @param startDate This is the start date of the Appointment. Since this is a one time appointment, the end date is the same as the start date.
      */
-    public OneTimeAppointment(String description, LocalDate startDate) {
+    public OnetimeAppointment(String description, LocalDate startDate) {
         // Because this is a one time appointment, start date should be the same as end date
         super(description, startDate, startDate);
     }
