@@ -11,6 +11,7 @@ public abstract class Appointment implements Comparable<Appointment>{
     private final LocalDate startDate;
     private final LocalDate endDate;
 
+
     /**
      * @param description This is the description for the type of Appointment.
      * @param startDate This is the start date of the Appointment.
